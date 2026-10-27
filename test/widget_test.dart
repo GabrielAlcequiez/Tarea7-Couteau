@@ -17,10 +17,12 @@ void main() {
     await tester.scrollUntilVisible(find.text('Acerca de'), 300);
     await tester.tap(find.text('Acerca de'));
     await tester.pumpAndSettle();
-    expect(find.text('Tu nombre aquí'), findsOneWidget);
+    expect(find.text('Gabriel Alcequiez'), findsOneWidget);
+    expect(find.text('2025-1062'), findsOneWidget);
+    expect(find.text('20251062@itla.edu.do'), findsOneWidget);
     expect(
       find.text('Foto y datos de contacto pendientes de personalizar.'),
-      findsOneWidget,
+      findsNothing,
     );
     expect(tester.takeException(), isNull);
   });

@@ -471,9 +471,10 @@ class AboutPage extends StatelessWidget {
           children: [
             ClipOval(
               child: Image.asset(
-                'assets/images/profile.png',
+                'assets/images/2x2.jpg',
                 width: 140,
                 height: 140,
+                fit: BoxFit.cover,
               ),
             ),
             const SizedBox(height: 24),
@@ -514,7 +515,7 @@ class AboutPage extends StatelessWidget {
         ),
       ),
       const Text(
-        'Caja de herramientas · v1.0.0\nProyecto académico desarrollado con Flutter.',
+        'Caja de herramientas · v${AppConfig.version}\nProyecto académico desarrollado con Flutter.',
         textAlign: TextAlign.center,
         style: TextStyle(color: muted, fontSize: 12),
       ),

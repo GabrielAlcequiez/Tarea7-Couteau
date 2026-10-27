@@ -46,8 +46,8 @@ void main() {
     await tester.runAsync(() async {
       final context = tester.element(find.byType(HomePage));
       await Future.wait([
-        precacheImage(const AssetImage('assets/images/toolbox.png'), context),
-        precacheImage(const AssetImage('assets/images/profile.png'), context),
+        precacheImage(const AssetImage('assets/images/toolbox.jpg'), context),
+        precacheImage(const AssetImage('assets/images/2x2.jpg'), context),
       ]);
     });
     await tester.pumpAndSettle();

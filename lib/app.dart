@@ -147,16 +147,11 @@ class HomePage extends StatelessWidget {
           ClipRRect(
             borderRadius: BorderRadius.circular(24),
             child: Image.asset(
-              'assets/images/toolbox.png',
+              'assets/images/toolbox.jpg',
               height: 200,
               width: double.infinity,
-              fit: BoxFit.cover,
+              fit: BoxFit.contain,
             ),
-          ),
-          const SizedBox(height: 10),
-          const Text(
-            'Ilustración provisional · foto de herramientas pendiente',
-            style: TextStyle(color: muted, fontSize: 11),
           ),
           const SizedBox(height: 28),
           Text(

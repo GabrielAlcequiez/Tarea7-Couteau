@@ -1,7 +1,7 @@
 name: tarea7_intromovil
 description: "Caja de herramientas: ocho vistas y consultas a API públicas."
 publish_to: 'none'
-version: 1.0.0+1
+version: 1.0.1+2
 
 environment:
   sdk: ^3.13.7
@@ -29,6 +29,6 @@ flutter:
 flutter_launcher_icons:
   android: true
   ios: false
-  image_path: assets/images/profile.png
+  image_path: assets/images/2x2.jpg
   adaptive_icon_background: '#EAF3EF'
-  adaptive_icon_foreground: assets/images/profile.png
+  adaptive_icon_foreground: assets/images/2x2.jpg
